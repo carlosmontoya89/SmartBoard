@@ -109,7 +109,7 @@ def sendMail(destinatario,mensaje):
     try:
         smName=platform.node()    
         remitente = "%s@smartboard.info"%(smName)    
-        sg = sendgrid.SendGridAPIClient(apikey="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")
+        sg = sendgrid.SendGridAPIClient(apikey="api.txt")
         from_email = Email(remitente)
         subject = "info From SmartBoard!"
         to_email = Email(destinatario)
